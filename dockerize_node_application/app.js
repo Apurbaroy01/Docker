@@ -5,7 +5,7 @@ const PORT = 5001; // Define the port for the server
 
 // Route for `/code-abc`
 app.get('/code-abc', (req, res) => {
-    res.send('Welcome to code ABC - a learning platform based on Bangladesh - i am a backend developer - I am Apurba roy');
+    res.send('Welcome to code ABC - a learning platform based on Bangladesh - I am Apurba roy - ia am a web developer');
 });
 
 // Route for `/error`

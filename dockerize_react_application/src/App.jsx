@@ -16,7 +16,6 @@ function App() {
         </a>
       </div>
       <h1>Apurba Roy</h1>
-      <h1>Apurba Roy</h1>
       
     </>
   )
