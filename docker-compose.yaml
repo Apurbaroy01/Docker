@@ -9,6 +9,8 @@ services:
     volumes:
       - ./dockerize_node_application:/app
       - /app/node_modules
+    networks:
+      - default
 
   frontend:
     build: ./dockerize_react_application
@@ -18,3 +20,18 @@ services:
     volumes:
       - ./dockerize_react_application:/app
       - /app/node_modules
+    networks:
+      - default
+  
+  # DB:
+  #   image: mongo
+  #   container_name: mongo_c
+  #   ports:
+  #     - "27017:27017"
+  #   networks:
+  #     - default
+
+
+networks:
+  default:
+    driver: bridge
